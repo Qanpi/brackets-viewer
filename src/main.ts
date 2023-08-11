@@ -1,4 +1,3 @@
-import './style.scss';
 import { Participant, Match, ParticipantResult, Stage, Status, GroupType, FinalType, Id } from 'brackets-model';
 import { splitBy, getRanking, getOriginAbbreviation, findRoot, completeWithBlankMatches, sortBy, isMatchGame, isMatch } from './helpers';
 import * as dom from './dom';

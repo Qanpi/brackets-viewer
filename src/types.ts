@@ -15,13 +15,13 @@ declare global {
     }
 
     interface HTMLElement {
-        togglePopover: () => void
+        togglePopover: (force?: boolean) => void
     }
 
     // https://developer.mozilla.org/en-US/docs/Web/API/ToggleEvent
     interface ToggleEvent extends Event {
-        oldState: 'open' | 'closed'
-        newState: 'open' | 'closed'
+        readonly oldState: string;
+        readonly newState: string;
     }
 }
 
